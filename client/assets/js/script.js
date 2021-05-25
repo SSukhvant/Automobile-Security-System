@@ -181,8 +181,10 @@ async function getValue() {
     }
 
     console.log(actions);
-    // const data = JSON.stringify(actions)
-    // console.log(data);
+    const controls = JSON.stringify(actions);
+    console.log(controls);
+    const data = JSON.stringify(actions)
+    console.log(data);
     const options = {
         method: 'POST',
         headers: {
