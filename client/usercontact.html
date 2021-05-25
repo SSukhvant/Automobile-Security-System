@@ -25,143 +25,136 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="userheader" class="fixed-top ">
     <div class="container">
 
       <div class="logo float-left">
-        <h1 class="text-light"><a href="admin.html"><span>AMSS</span></a></h1>
+        <h1 class="text-light"><a href="user.html"><span>AMSS</span></a></h1>
+
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a href="admin.html">Home</a></li>
-          <li><a href="tracking.html">Live Tracking</a></li>
-          <li><a href="technology.html">Technologies</a></li>
-          <li class="active"><a href="action.html">Action</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="user.html">Home</a></li>
+          <li><a href="useraction.html">Action</a></li>
           <li class="drop-down"><a href="">Profile</a>
             <ul>
-    
-              <li class="drop-down"><a href="#">User</a>
-                <ul>
-
-                  <li><a href="adduser.html">Add New User</a></li>
-                  <li><a href="user.html">User Login</a></li>
-                  
-
-                </ul>
-              </li>
+                <li><a href="index.html">Admin Login</a></li>
               <!-- <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a href="#" onClick="logout()">Logout</a></li> -->
+              <li><a href="#">Logout</a></li> -->
             </ul>
           </li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li class="active"><a href="usercontact.html">Contact Us</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
+    <!-- ======= Contact Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Controls</h2>
+          <h2>Contact</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Controls</li>
+            <li>Contact</li>
           </ol>
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
+    </section><!-- End Contact Section -->
 
-    <!-- ======= About Section ======= -->
-    <section class="features my-5">
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
       <div class="container">
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-12 pt-4">
-            <ol class="list-group list-group-numbered shadow p-4">
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold"><h6 id="unlock">Unlocked</h6></div>
-                  <small>Lock/Unlock your vehicle</small>
-                </div>
-                <div class="togglebx">
-                  <label class="labelt">
-                    <div class="con">
-                        <input class="switch" type="checkbox" id="lock" name="check" value="1">
-                        <div class="toggle"></div>
-                        
-                    </div>
-                  </label>
-              </div>
-                
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold"><h6 id="engineonoff">Engine OFF</h6></div>
-                  <small>Power Lock</small>
-                </div>
-                <div class="togglebx">
-                  <label class="labelt">
-                    <div class="con">
-                        <input class="switch" type="checkbox" id="engine" name="check" value="1">
-                        <div class="toggle"></div>
-                    </div>
-                  </label>
-              </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold"><h6 id="buzzeronoff">Buzzer OFF</h6></div>
-                  <small>On buzzer</small>
-                </div>
-                <div class="togglebx">
-                  <label class="labelt">
-                    <div class="con">
-                        <input class="switch" type="checkbox" id="buzzer" name="check" value="1">
-                        <div class="toggle"></div>
-                    </div>
-                  </label>
-              </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-end border-0 mr-3">
-                <button class="btn btn-outline-danger shadow-sm" id="submit" type="button" onclick="getValue();return false;">Apply</button>
-              </li>
-              
-            </ol>
-          </div>
+        <div class="row">
 
-          <div class="col-md-12 pt-3 px-5">
-            <h5>Current Status</h5>
-            <p class="fs-6 pt-3" id="user_action">Status...</p>
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <h3>Social Links</h3>
+                  <div class="social-links mt-3">
+                    <a href="#" class="twitter"><i class="bx bxl-youtube"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-github"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-google"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>webdevstudio1@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 1234567890</p>
+                </div>
+              </div>
             </div>
 
-        </div>   
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control border-0 shadow-sm" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control border-0 shadow-sm" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control border-0 shadow-sm" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control border-0 shadow-sm" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
 
       </div>
     </section>
 
-    
 
-
-
+  </main>
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+  <footer id="userfooter" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -231,8 +224,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/script.js"></script>
-  <!-- <script src="assets/js/login.js"></script> -->
 
 </body>
 
