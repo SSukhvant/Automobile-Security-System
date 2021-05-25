@@ -2,240 +2,207 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Automobile Security System</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+    <title>Automobile Security System</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container">
 
-      <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>AMSS</span></a></h1>
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li><a href="admin.html">Home</a></li>
-          <li><a href="tracking.html">Live Tracking</a></li>
-          <li><a href="technology.html">Technologies</a></li>
-          <li><a href="action.html">Action</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li class="drop-down active"><a href="">Profile</a>
-            <ul>
-              <li><a href="#">Admin</a></li>
-              <li class="drop-down"><a href="#">User</a>
-                <ul>
-                  <li><a href="adduser.html">Add User</a></li>
-                  <li><a href="#">User Login</a></li>
-
-                </ul>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a href="#" id="user_para">You're currently logged in.</a></li>
-              <li><a href="#" onClick="logout()">Logout</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= About Us Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Add New User</h2>
-          <ol>
-            <li><a href="index.html">Profile</a></li>
-            <li>User</li>
-            <li>Add User</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= About Section ======= -->
-    <section class="features my-5">
-      <div class="container">
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-12 pt-4">
-            <ol class="list-group list-group-numbered shadow p-4">
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold"><h6 id="unlock">Unlocked</h6></div>
-                  <small>Lock/Unlock your vehicle</small>
-                </div>
-                <div class="togglebx">
-                  <label class="labelt">
-                    <div class="con">
-                        <input class="switch" type="checkbox" id="lock" name="check" value="1">
-                        <div class="toggle"></div>
-                        
-                    </div>
-                  </label>
-              </div>
-                
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold"><h6 id="engineonoff">Engine OFF</h6></div>
-                  <small>Power Lock</small>
-                </div>
-                <div class="togglebx">
-                  <label class="labelt">
-                    <div class="con">
-                        <input class="switch" type="checkbox" id="engine" name="check" value="1">
-                        <div class="toggle"></div>
-                    </div>
-                  </label>
-              </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start border-0">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold"><h6 id="buzzeronoff">Buzzer OFF</h6></div>
-                  <small>On buzzer</small>
-                </div>
-                <div class="togglebx">
-                  <label class="labelt">
-                    <div class="con">
-                        <input class="switch" type="checkbox" id="buzzer" name="check" value="1">
-                        <div class="toggle"></div>
-                    </div>
-                  </label>
-              </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-end border-0 mr-3">
-                <button class="btn btn-outline-danger shadow-sm" id="submit" type="button" onclick="getValue();return false;">Apply</button>
-              </li>
-              
-            </ol>
-          </div>
-
-        </div>   
-
-      </div>
-    </section>
-
-    
-
-
-
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Technology</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Four Wheeler Security</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Bike Security</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              <strong>Phone:</strong> +91 1234567890<br>
-              <strong>Email: </strong>  webdevstudio1@gmail.com<br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About</h3>
-            <p>An advance security system which provides the security to the vehicle.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-youtube"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-github"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-google"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div class="logo float-left">
+                <h1 class="text-light"><a href="index.html"><span>AMSS</span></a></h1>
             </div>
-          </div>
+
+            <nav class="nav-menu float-right d-none d-lg-block">
+                <ul>
+                    <li><a href="admin.html">Home</a></li>
+                    <li><a href="tracking.html">Live Tracking</a></li>
+                    <li><a href="technology.html">Technologies</a></li>
+                    <li><a href="action.html">Action</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li class="drop-down active"><a href="">Profile</a>
+                        <ul>
+                            <li><a href="#">Admin</a></li>
+                            <li class="drop-down"><a href="#">User</a>
+                                <ul>
+                                    <li><a href="adduser.html">Add User</a></li>
+                                    <li><a href="#">User Login</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a href="#" id="user_para">You're currently logged in.</a></li>
+                            <li><a href="#" onClick="logout()">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
 
         </div>
-      </div>
-    </div>
+    </header><!-- End Header -->
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Automobile Security System</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer>
+    <main id="main">
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+        <!-- ======= About Us Section ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Add New User</h2>
+                    <ol>
+                        <li><a href="index.html">Profile</a></li>
+                        <li>User</li>
+                        <li>Add User</li>
+                    </ol>
+                </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/script.js"></script>
- 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+            </div>
+        </section><!-- End About Us Section -->
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
+        <!-- ======= New User Section ======= -->
+        <section class="features my-5">
+            <div class="container">
+                <div class="row" data-aos="fade-up">
+                    <div class="col-md-12 pt-5">
+                        <!-- <div id="firebaseui-auth-container"></div> -->
+                        <h6>Add New User</h6>
+                        <input type="email" name="email" id="new_user_email" placeholder="Enter Your Email" class="form-control border-0 shadow-sm">
+                        <input type="password" name="password" id="new_user_password" placeholder="Create Your Password" class="form-control border-0 shadow-sm mt-3">
+                        <button class="btn btn-outline-danger rounded-pill mt-3" onclick="newUser()">Add New User</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Technology</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Team</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Four Wheeler Security</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Bike Security</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4>Contact Us</h4>
+                            <p>
+                                <strong>Phone:</strong> +91 1234567890<br>
+                                <strong>Email: </strong> webdevstudio1@gmail.com<br>
+                            </p>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-info">
+                            <h3>About</h3>
+                            <p>An advance security system which provides the security to the vehicle.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-youtube"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-github"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-google"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Automobile Security System</span></strong>. All Rights Reserved
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/jquery/jquery.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/venobox/venobox.min.js"></script>
+        <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/vendor/counterup/counterup.min.js"></script>
+        <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/script.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script> -->
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-  <script src="assets/js/login.js"></script>
+        <!-- <script src="assets/js/login.js"></script> -->
+
+        <script src="assets/js/firebase.js"></script>
+        <script src="assets/js/adduser.js"></script>
 
 </body>
 
