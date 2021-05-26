@@ -2076,6 +2076,38 @@ input, button {
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  .main-div{
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-div{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-div{
+    width: 100%;
+  }
+} 
+
+@media only screen and (max-width: 992px) {
+  .main-div{
+    width: 80%;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .main-div{
+    width: 30%;
+  }
+}
+
 /* .main-div a{
   margin-top: 50rem !important;
 } */
