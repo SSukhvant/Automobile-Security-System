@@ -47,6 +47,7 @@ firebase.auth().createUserWithEmailAndPassword(newuserEmail, newuserPass)
   
       window.alert("Error : " + errorMessage);
     });
+    window.alert(newuserEmail + " " + "added successfully");
   
   }
 

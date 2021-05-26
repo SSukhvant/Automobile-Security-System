@@ -63,3 +63,34 @@ function logout(){
 
 // const uemail = document.getElementByClassName("user_paras").value;
 // document.getElementById("user_paras").innerHTML = uemail;
+
+firebase.auth().createUserWithEmailAndPassword(newadminEmail, newadminPass)
+  .then((userCredential) => { 
+    var user = userCredential.user;
+    console.log(user);
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert("ERROR : " + errorCode + " " + errorMessage);
+
+  });
+
+  function newAdmin(){
+
+    var newadminEmail = document.getElementById("new_admin_email").value;
+    var newadminPass = document.getElementById("new_admin_password").value;
+  
+    
+  
+  
+    firebase.auth().createUserWithEmailAndPassword(newadminEmail, newadminPass).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+  
+      window.alert("ERROR : " + errorCode + " " + errorMessage);
+    });
+    window.alert(newadminEmail + " " + "added successfully");
+  
+  }
