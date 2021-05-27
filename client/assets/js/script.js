@@ -55,6 +55,11 @@ async function getValue() {
         body: JSON.stringify(actions)
     };
     const response = await fetch('https://automobile-security-system.herokuapp.com/api', options);
+    // const response = await fetch('http://localhost:3000/hw', options)
     const json = await response.json();
     console.log(json);
+
+    // const res = await fetch('http://localhost:3000/api', options)
+    // const jsn = await res.json();
+    // console.log(jsn);
 }
