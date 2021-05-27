@@ -93,6 +93,9 @@
           <div class="col-md-12">
                 <div id="map"></div>
           </div>
+          <div class="col-md-12 my-5">
+            <a id="gps">gps</a>
+      </div>
         </div>
       </div>
     </section>
@@ -192,8 +195,11 @@
         .then((data) => {
           latitude = data[0].lat;
           longitude = data[0].lon;
+          time = data[0].timestamp;
+          
           console.log(data[0].lat, data[0].lon)
-          /*  window.location.href = `https://www.google.co.in/maps/@${latitude}/${longitude}`; */
+          console.log(`https://www.google.co.in/maps/@${latitude}/${longitude}`)
+          document.getElementById("gps").innerHTML = "Latitude : " + latitude + ", " + "Longitude : " + longitude;
           mapboxgl.accessToken =
             "pk.eyJ1Ijoic3VraHZhbnQyMSIsImEiOiJja21zemhya24waWpmMnZwYzU2eHRzZzBmIn0.vhLvMwBsd6nZfRGdToDtcA";
           navigator.geolocation.getCurrentPosition(
